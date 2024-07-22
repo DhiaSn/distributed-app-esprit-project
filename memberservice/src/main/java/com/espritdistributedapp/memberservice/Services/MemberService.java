@@ -32,4 +32,12 @@ public class MemberService {
         return new PostMemberResponse(memberRepo.save(member));
     }
 
+    public List<getAllMemberResponse> getAllByClub(Integer clubId){
+        List<Member> members = memberRepo.findAllByClubId(clubId);
+
+        return members.stream()
+                .map(getAllMemberResponse::new)
+                .collect(Collectors.toList());
+    }
+
 }

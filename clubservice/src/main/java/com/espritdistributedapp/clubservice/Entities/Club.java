@@ -1,4 +1,4 @@
-package com.espritdistributedapp.memberservice.Entities;
+package com.espritdistributedapp.clubservice.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,12 +12,10 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Member {
+public class Club {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private  Integer id;
-    private  String firstName;
-    private  String lastName;
+    private  String name;
     private  String email;
-    private  Integer clubId;
 }

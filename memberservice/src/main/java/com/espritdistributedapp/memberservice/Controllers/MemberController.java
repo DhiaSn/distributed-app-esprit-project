@@ -1,4 +1,4 @@
-package com.espritdistributedapp.memberservice;
+package com.espritdistributedapp.memberservice.Controllers;
 
 import com.espritdistributedapp.memberservice.DTOs.PostMemberRequest;
 import com.espritdistributedapp.memberservice.DTOs.PostMemberResponse;
@@ -22,5 +22,11 @@ public class MemberController {
     @PostMapping
     public PostMemberResponse post(@RequestBody PostMemberRequest request) {
         return memberService.post(request);
+    }
+
+    @GetMapping("/Club/{clubId}")
+    @ResponseBody
+    public List<getAllMemberResponse> getAllByClub(@PathVariable("clubId") Integer clubId) {
+        return memberService.getAllByClub(clubId);
     }
 }

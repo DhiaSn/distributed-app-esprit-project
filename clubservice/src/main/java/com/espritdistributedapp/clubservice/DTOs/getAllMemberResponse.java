@@ -1,11 +1,12 @@
-package com.espritdistributedapp.memberservice.DTOs;
+package com.espritdistributedapp.clubservice.DTOs;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class PostMemberRequest {
+public class getAllMemberResponse {
+    private  long id;
     private  String firstName;
     private  String lastName;
     private  String email;

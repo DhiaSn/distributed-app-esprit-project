@@ -1,4 +1,4 @@
-package com.espritdistributedapp.memberservice;
+package com.espritdistributedapp.clubservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableFeignClients
 @SpringBootApplication
-public class MemberserviceApplication {
+public class ClubserviceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MemberserviceApplication.class, args);
+		SpringApplication.run(ClubserviceApplication.class, args);
 	}
 
 }

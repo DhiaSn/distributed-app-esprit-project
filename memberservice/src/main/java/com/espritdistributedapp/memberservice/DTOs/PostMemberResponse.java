@@ -1,7 +1,11 @@
 package com.espritdistributedapp.memberservice.DTOs;
 
 import com.espritdistributedapp.memberservice.Entities.Member;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class PostMemberResponse {
     public  PostMemberResponse(Member member){
         id = member.getId();
@@ -14,5 +18,5 @@ public class PostMemberResponse {
     private  String firstName;
     private  String lastName;
     private  String email;
-    private  long clubId;
+    private  Integer clubId;
 }
