@@ -1,21 +1,19 @@
 package com.espritdistributedapp.memberservice.Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.*;
+import lombok.experimental.FieldDefaults;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class Member {
+import java.io.Serializable;
+
+@Document
+@Data
+@Getter @Setter
+@AllArgsConstructor @NoArgsConstructor @Builder
+public class Member implements Serializable {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private  Integer id;
+    private  Long id;
     private  String firstName;
     private  String lastName;
     private  String email;

@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/memberservice/pom.xml" />
         <option value="$PROJECT_DIR$/clubservice/pom.xml" />
+        <option value="$PROJECT_DIR$/sharedKarnel/pom.xml" />
       </list>
     </option>
   </component>

@@ -25,6 +25,7 @@ public class MemberService {
     }
     public PostMemberResponse post(PostMemberRequest request) {
         Member member = new Member();
+        member.setId(memberRepo.count()+1);
         member.setFirstName(request.getFirstName());
         member.setLastName(request.getLastName());
         member.setEmail(request.getEmail());
