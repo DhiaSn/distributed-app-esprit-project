@@ -12,9 +12,11 @@
         <module name="clubservice" />
         <module name="gateway" />
         <module name="discovery" />
-        <module name="sharedKarnel" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sharedKarnel" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
